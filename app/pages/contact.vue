@@ -1,38 +1,37 @@
 <template>
   <section class="container contact">
     <article class="glass intro">
-      <span class="eyebrow">Contact</span>
-      <h1 class="section-title">Start the conversation without another integration sprint.</h1>
+      <span class="eyebrow">联系咨询</span>
+      <h1 class="section-title">不需要额外重接链路，也能马上开始收集线索。</h1>
       <p class="section-copy">
-        This page posts to the shared backend contact endpoint so website leads already arrive in the same data model as
-        the admin can inspect later.
+        这个页面会把表单直接提交到统一后端接口里，因此官网线索会和后台后续查看的数据模型保持一致。
       </p>
     </article>
 
     <article class="glass form-card">
       <form class="form" @submit.prevent="onSubmit">
         <label>
-          <span>Name</span>
+          <span>姓名</span>
           <input v-model="form.name" required />
         </label>
         <label>
-          <span>Email</span>
+          <span>邮箱</span>
           <input v-model="form.email" type="email" required />
         </label>
         <label>
-          <span>Phone</span>
+          <span>手机号</span>
           <input v-model="form.phone" />
         </label>
         <label>
-          <span>Company</span>
+          <span>公司名称</span>
           <input v-model="form.company" />
         </label>
         <label class="wide">
-          <span>Message</span>
+          <span>咨询内容</span>
           <textarea v-model="form.message" rows="6" required />
         </label>
         <button :disabled="pending" type="submit">
-          {{ pending ? 'Sending...' : 'Send inquiry' }}
+          {{ pending ? '提交中...' : '提交咨询' }}
         </button>
       </form>
 
@@ -65,8 +64,8 @@ async function onSubmit() {
 }
 
 useSeoMeta({
-  title: 'Contact',
-  description: 'Send a message through the shared startup backend contact pipeline.',
+  title: '联系咨询',
+  description: '通过统一后端联系通道提交咨询信息，便于官网和后台协同处理。',
 })
 </script>
 
@@ -139,4 +138,3 @@ button {
   }
 }
 </style>
-

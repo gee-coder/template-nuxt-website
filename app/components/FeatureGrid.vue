@@ -1,8 +1,8 @@
 <template>
   <section class="container section">
     <div class="section-head">
-      <span class="eyebrow">Why this template</span>
-      <h2 class="section-title">Clear boundaries, calmer shipping.</h2>
+      <span class="eyebrow">为什么选这套模板</span>
+      <h2 class="section-title">边界清晰，交付更稳。</h2>
     </div>
     <div class="grid">
       <article v-for="item in items" :key="item.title" class="glass feature">
@@ -15,10 +15,10 @@
 
 <script setup lang="ts">
 const items = [
-  { title: 'Shared contracts', copy: 'Backend, admin, website, and miniapp speak the same envelope and auth payload.' },
-  { title: 'Clean layering', copy: 'Handlers stay thin while services own business rules and repositories own persistence.' },
-  { title: 'Operator-first admin', copy: 'Menus, roles, and users are in place before the first custom feature lands.' },
-  { title: 'Marketing-ready front', copy: 'SEO-friendly pages and a live contact form are already wired into the backend.' },
+  { title: '统一接口契约', copy: '后端、后台、官网和小程序统一使用同一套响应信封与鉴权返回结构。' },
+  { title: '分层清晰', copy: '接口层保持轻量，业务规则放进服务层，数据访问沉到仓储层。' },
+  { title: '运营后台先就位', copy: '菜单、角色、用户这些基础管理能力在业务功能开始前就能直接使用。' },
+  { title: '官网表单已打通', copy: '公开页面、搜索友好能力和联系表单已经连到后端，不需要再重复搭桥。' },
 ]
 </script>
 
@@ -60,4 +60,3 @@ const items = [
   }
 }
 </style>
-

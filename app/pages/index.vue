@@ -5,20 +5,19 @@
 
     <section class="container split">
       <article class="glass split-card">
-        <span class="eyebrow">Built for reuse</span>
-        <h2>Ship the first product fast without rebuilding the foundation every time.</h2>
+        <span class="eyebrow">为复用而生</span>
+        <h2>先把第一版产品跑起来，不必每次都从底座重搭。</h2>
         <p>
-          The template aligns backend contracts, admin operations, website intake, and miniapp auth so your next module
-          starts from business logic instead of setup fatigue.
+          这套模板把后端契约、后台管理、官网获客和小程序鉴权先对齐好，让你后续新增模块时直接从业务逻辑起步。
         </p>
       </article>
       <article class="glass split-card">
-        <span class="eyebrow">Included now</span>
+        <span class="eyebrow">当前已包含</span>
         <ul>
-          <li>Backend auth and RBAC</li>
-          <li>Admin dashboard and CRUD scaffolding</li>
-          <li>Nuxt marketing pages</li>
-          <li>Miniapp login shell and shared token flow</li>
+          <li>后端登录鉴权与角色权限体系</li>
+          <li>管理后台工作台与系统管理骨架</li>
+          <li>官网展示页与联系表单</li>
+          <li>微信小程序登录页与统一令牌流转</li>
         </ul>
       </article>
     </section>
@@ -30,11 +29,11 @@ import HeroPanel from '~/app/components/HeroPanel.vue'
 import FeatureGrid from '~/app/components/FeatureGrid.vue'
 
 const config = useRuntimeConfig()
-const headline = `${config.public.siteName} helps small teams launch with less glue code.`
-const copy = 'Use one practical foundation for your backend, admin, public website, and miniapp without losing architectural clarity.'
+const headline = `${config.public.siteName} 帮小团队更快把产品原型落地。`
+const copy = '用一套清晰、可扩展的基础工程，把后端、后台、官网和小程序先统一起来，再专注做业务。'
 
 useSeoMeta({
-  title: 'Home',
+  title: '首页',
   description: copy,
 })
 </script>
@@ -68,4 +67,3 @@ useSeoMeta({
   }
 }
 </style>
-

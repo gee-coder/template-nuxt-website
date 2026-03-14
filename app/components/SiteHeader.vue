@@ -20,10 +20,10 @@ const runtimeConfig = useRuntimeConfig()
 const siteName = runtimeConfig.public.siteName
 const tagline = runtimeConfig.public.siteTagline
 const items = [
-  { to: '/', label: 'Home' },
-  { to: '/features', label: 'Features' },
-  { to: '/about', label: 'About' },
-  { to: '/contact', label: 'Contact' },
+  { to: '/', label: '首页' },
+  { to: '/features', label: '能力介绍' },
+  { to: '/about', label: '关于我们' },
+  { to: '/contact', label: '联系咨询' },
 ]
 </script>
 
@@ -84,4 +84,3 @@ const items = [
   }
 }
 </style>
-

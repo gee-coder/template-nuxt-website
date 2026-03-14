@@ -4,7 +4,7 @@
       <strong>{{ siteName }}</strong>
       <p>{{ tagline }}</p>
     </div>
-    <p>Built to pair with the shared backend, admin, and miniapp templates.</p>
+    <p>与统一后端、管理后台和小程序模板协同设计，方便一起落地。</p>
   </footer>
 </template>
 
@@ -33,4 +33,3 @@ const tagline = runtimeConfig.public.siteTagline
   }
 }
 </style>
-

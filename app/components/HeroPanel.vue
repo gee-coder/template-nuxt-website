@@ -2,12 +2,12 @@
   <section class="container hero">
     <div class="glass hero-card">
       <div class="hero-copy">
-        <span class="eyebrow">Startup website template</span>
+        <span class="eyebrow">创业官网模板</span>
         <h1 class="section-title">{{ title }}</h1>
         <p class="section-copy">{{ copy }}</p>
         <div class="hero-actions">
-          <NuxtLink class="action primary" to="/contact">Talk to us</NuxtLink>
-          <NuxtLink class="action secondary" to="/features">See the stack</NuxtLink>
+          <NuxtLink class="action primary" to="/contact">立即咨询</NuxtLink>
+          <NuxtLink class="action secondary" to="/features">查看能力</NuxtLink>
         </div>
       </div>
 
@@ -28,9 +28,9 @@ defineProps<{
 }>()
 
 const metrics = [
-  { label: 'Shared repos', value: '4' },
-  { label: 'Ready auth modes', value: 'JWT' },
-  { label: 'Default apps', value: 'Admin + Miniapp' },
+  { label: '协同仓库', value: '4' },
+  { label: '默认鉴权', value: '令牌鉴权' },
+  { label: '默认终端', value: '后台 + 小程序' },
 ]
 </script>
 
@@ -98,4 +98,3 @@ const metrics = [
   }
 }
 </style>
-

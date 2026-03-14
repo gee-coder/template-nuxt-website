@@ -1,21 +1,20 @@
 <template>
   <section class="container about">
     <article class="glass card">
-      <span class="eyebrow">About the template</span>
-      <h1 class="section-title">Designed for solo founders and tiny teams who still want clean code.</h1>
+      <span class="eyebrow">关于模板</span>
+      <h1 class="section-title">面向独立开发者和小团队，也尽量保持结构清晰。</h1>
       <p class="section-copy">
-        The goal is not to mimic a giant enterprise stack. The goal is to make the first few products feel stable,
-        legible, and expandable without overbuilding before revenue exists.
+        这套模板不是为了模仿大公司的复杂系统，而是为了让创业前期的几个产品也能在稳定、清楚、可扩展的基础上往前做。
       </p>
     </article>
 
     <article class="glass card">
-      <h2>Principles</h2>
+      <h2>设计原则</h2>
       <ul>
-        <li>Keep the contracts shared across repos.</li>
-        <li>Push business logic into services, not route files.</li>
-        <li>Treat the admin as an operator tool, not a dumping ground.</li>
-        <li>Keep the website public and focused on conversion.</li>
+        <li>跨仓库共享统一的接口契约。</li>
+        <li>把业务逻辑放进服务层，而不是散落在路由文件里。</li>
+        <li>把后台当成运营工具，而不是杂物间。</li>
+        <li>让官网持续聚焦公开展示和转化目标。</li>
       </ul>
     </article>
   </section>
@@ -23,8 +22,8 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'About',
-  description: 'Learn the principles behind the startup template architecture.',
+  title: '关于我们',
+  description: '了解这套创业模板背后的设计原则和架构取向。',
 })
 </script>
 
@@ -45,4 +44,3 @@ useSeoMeta({
   color: #5b6879;
 }
 </style>
-

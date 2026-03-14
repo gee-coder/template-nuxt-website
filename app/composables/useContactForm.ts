@@ -16,9 +16,9 @@ export function useContactForm() {
         method: 'POST',
         body: payload,
       })
-      successMessage.value = 'Thanks. Your message is on its way.'
+      successMessage.value = '提交成功，我们会尽快与你联系。'
     } catch (error) {
-      errorMessage.value = error instanceof Error ? error.message : 'Submission failed'
+      errorMessage.value = error instanceof Error ? error.message : '提交失败，请稍后再试'
     } finally {
       pending.value = false
     }
@@ -31,4 +31,3 @@ export function useContactForm() {
     submit,
   }
 }
-
