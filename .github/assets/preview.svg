@@ -1,0 +1,21 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" rx="36" fill="#FFFDF8"/>
+  <rect x="32" y="32" width="1216" height="656" rx="28" fill="url(#bg)"/>
+  <rect x="84" y="84" width="1112" height="180" rx="28" fill="#FFFFFF" fill-opacity="0.84"/>
+  <rect x="84" y="296" width="544" height="320" rx="28" fill="#FFFFFF" fill-opacity="0.84"/>
+  <rect x="652" y="296" width="544" height="320" rx="28" fill="#0F172A" fill-opacity="0.84"/>
+  <text x="84" y="68" fill="#7C2D12" font-size="28" font-family="Segoe UI, Arial, sans-serif">template-nuxt-website</text>
+  <text x="124" y="152" fill="#0F172A" font-size="42" font-family="Segoe UI, Arial, sans-serif">Marketing Website Preview</text>
+  <text x="124" y="196" fill="#475569" font-size="20" font-family="Segoe UI, Arial, sans-serif">Home, features, about, and contact pages prepared for SEO-friendly delivery.</text>
+  <text x="124" y="364" fill="#0F172A" font-size="30" font-family="Segoe UI, Arial, sans-serif">Public Storytelling</text>
+  <text x="124" y="410" fill="#475569" font-size="18" font-family="Segoe UI, Arial, sans-serif">Hero messaging, feature blocks, and company positioning.</text>
+  <text x="692" y="364" fill="#FFFFFF" font-size="30" font-family="Segoe UI, Arial, sans-serif">Lead Capture</text>
+  <text x="692" y="410" fill="#D1D5DB" font-size="18" font-family="Segoe UI, Arial, sans-serif">Contact form wired to the shared backend submission API.</text>
+  <defs>
+    <linearGradient id="bg" x1="32" y1="32" x2="1248" y2="688" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDE68A"/>
+      <stop offset="1" stop-color="#FCA5A5"/>
+    </linearGradient>
+  </defs>
+</svg>
+

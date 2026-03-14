@@ -1,6 +1,16 @@
 # template-nuxt-website
 
+![CI](https://github.com/gee-coder/template-nuxt-website/actions/workflows/ci.yml/badge.svg)
+![Nuxt](https://img.shields.io/badge/Nuxt-3.21.2-00DC82?logo=nuxt&logoColor=white)
+![Vue](https://img.shields.io/badge/Vue-3-42B883?logo=vue.js&logoColor=white)
+![SEO](https://img.shields.io/badge/SEO-Ready-0F766E)
+![Node Server](https://img.shields.io/badge/Deploy-Node_Server-1F2937)
+
 一套面向创业产品官网 / 营销站的 Nuxt 3 模板，内置首页、特性页、关于页、联系页，并已打通后端联系人表单接口，适合直接作为官网仓库长期复用。
+
+## 预览占位图
+
+![Website Preview](./.github/assets/preview.svg)
 
 ## 1. 项目定位
 
@@ -14,9 +24,19 @@
 - Vue `3`
 - TypeScript
 
-## 3. 架构图
+## 3. 快速开始总览图
 
-### 3.1 系统关系图
+```mermaid
+flowchart LR
+    A["复制 .env"] --> B["npm install"]
+    B --> C["npm run dev"]
+    C --> D["访问首页与联系页"]
+    D --> E["提交线索到后端联系人接口"]
+```
+
+## 4. 架构图
+
+### 4.1 系统关系图
 
 ```mermaid
 flowchart LR
@@ -25,7 +45,7 @@ flowchart LR
     Backend --> MySQL["MySQL"]
 ```
 
-### 3.2 站点内部结构图
+### 4.2 站点内部结构图
 
 ```mermaid
 flowchart TD
@@ -36,7 +56,7 @@ flowchart TD
     Config["nuxt.config.ts / runtimeConfig"] --> Pages
 ```
 
-## 4. 页面结构
+## 5. 页面结构
 
 已内置页面：
 
@@ -45,7 +65,7 @@ flowchart TD
 - `/about`：关于页
 - `/contact`：联系咨询页
 
-## 5. 目录结构
+## 6. 目录结构
 
 - `app/pages`：页面路由
 - `app/components`：页面公共组件
@@ -56,15 +76,15 @@ flowchart TD
 - `app/plugins`：SEO 等插件注册
 - `nuxt.config.ts`：运行时配置与 Nuxt 主配置
 
-## 6. 本地开发使用方式
+## 7. 本地开发使用方式
 
-### 6.1 安装依赖
+### 7.1 安装依赖
 
 ```powershell
 npm install
 ```
 
-### 6.2 初始化环境变量
+### 7.2 初始化环境变量
 
 ```powershell
 Copy-Item .env.example .env
@@ -76,7 +96,7 @@ Copy-Item .env.example .env
 - `NUXT_PUBLIC_SITE_TAGLINE`：站点副标题
 - `NUXT_PUBLIC_API_BASE`：后端 API 地址
 
-### 6.3 启动开发环境
+### 7.3 启动开发环境
 
 ```powershell
 npm run dev
@@ -86,7 +106,7 @@ npm run dev
 
 - `http://localhost:3000`
 
-## 7. 联系表单说明
+## 8. 联系表单说明
 
 联系页默认调用后端接口：
 
@@ -101,9 +121,19 @@ npm run dev
 - `message`
 - `source`
 
-## 8. 部署方式
+## 9. 部署方式
 
-### 8.1 Node 服务部署
+### 9.1 部署总览图
+
+```mermaid
+flowchart LR
+    Build["npm run build"] --> Output[".output"]
+    Output --> Node["node .output/server/index.mjs"]
+    Node --> Nginx["Nginx / 443"]
+    Nginx --> Visitor["访客访问"]
+```
+
+### 9.2 Node 服务部署
 
 当前 Nuxt 配置默认走 Node Server 输出。
 
@@ -118,18 +148,18 @@ node .output/server/index.mjs
 - PM2 / systemd 托管
 - Nginx 反向代理
 
-### 8.2 Nginx 反向代理建议
+### 9.3 Nginx 反向代理建议
 
 - `80/443` 入口交给 Nginx
 - 网站主请求转发到 Nuxt Node Server
 - `/api/` 可直接反代到后端，也可由 Nuxt 页面直连后端域名
 
-### 8.3 生产环境建议
+### 9.4 生产环境建议
 
 - 将 `NUXT_PUBLIC_API_BASE` 改为线上 API 地址
 - 如接入埋点、SEO、A/B 测试，可优先放在 `app/plugins` 与 `app/composables`
 
-## 9. 常用命令
+## 10. 常用命令
 
 ```powershell
 npm run dev
@@ -138,14 +168,14 @@ npm run build
 npm run preview
 ```
 
-## 10. 验证结果
+## 11. 验证结果
 
 当前模板已实际通过：
 
 - `npm run type-check`
 - `npm run build`
 
-## 11. 扩展建议
+## 12. 扩展建议
 
 - 按页面类型继续扩展案例页、定价页、博客页
 - 继续保持官网只负责公开内容与线索收集，不把业务后台逻辑塞入本仓库
