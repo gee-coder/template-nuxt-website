@@ -1,0 +1,32 @@
+"type:docs":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/*.md"
+          - ".github/**"
+
+"area:content":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "app/pages/**"
+          - "app/components/**"
+
+"area:contact":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "app/pages/contact.vue"
+          - "app/composables/**"
+          - "app/types/**"
+
+"area:seo":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "nuxt.config.ts"
+          - "app/layouts/**"
+          - "app/app.config.*"
+
+"area:infra":
+  - changed-files:
+      - any-glob-to-any-file:
+          - ".github/workflows/**"
+          - "package.json"
+          - "package-lock.json"

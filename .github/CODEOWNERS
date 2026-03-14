@@ -1,0 +1,13 @@
+# Default reviewers for the website template
+* @gee-coder
+
+# Repository governance and release automation
+/.github/ @gee-coder
+/README.md @gee-coder
+/CHANGELOG.md @gee-coder
+/RELEASE.md @gee-coder
+
+# Core application areas
+/app/ @gee-coder
+/nuxt.config.ts @gee-coder
+/app.vue @gee-coder

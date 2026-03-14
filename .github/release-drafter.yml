@@ -1,0 +1,69 @@
+name-template: "v$RESOLVED_VERSION"
+tag-template: "v$RESOLVED_VERSION"
+template: |
+  ## 变更摘要
+
+  $CHANGES
+
+  ## 升级提示
+
+  - 请检查运行时配置、SEO 与联系表单配置是否需要同步更新
+  - 如涉及内容结构变更，请同步核对 README 与部署文档
+categories:
+  - title: "Features"
+    labels:
+      - "type:feature"
+  - title: "Fixes"
+    labels:
+      - "type:bug"
+  - title: "Docs"
+    labels:
+      - "type:docs"
+  - title: "Maintenance"
+    labels:
+      - "type:chore"
+      - "dependencies"
+change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
+change-title-escapes: '\<*_&'
+exclude-labels:
+  - "skip-changelog"
+version-resolver:
+  major:
+    labels:
+      - "type:breaking"
+  minor:
+    labels:
+      - "type:feature"
+  patch:
+    labels:
+      - "type:bug"
+      - "type:docs"
+      - "type:chore"
+      - "dependencies"
+  default: patch
+autolabeler:
+  - label: "type:docs"
+    files:
+      - "*.md"
+      - ".github/**"
+  - label: "area:content"
+    files:
+      - "app/pages/**"
+      - "app/components/**"
+  - label: "area:contact"
+    files:
+      - "app/pages/contact.vue"
+      - "app/composables/**"
+      - "app/types/**"
+  - label: "area:seo"
+    files:
+      - "nuxt.config.ts"
+      - "app/layouts/**"
+      - "app/app.config.*"
+  - label: "area:infra"
+    files:
+      - ".github/workflows/**"
+      - "package.json"
+      - "package-lock.json"
+footer: |
+  更多协作约定见 `COLLABORATION.md`、`MAINTAINERS.md` 与 `RELEASE.md`。

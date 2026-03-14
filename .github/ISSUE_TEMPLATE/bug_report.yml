@@ -2,7 +2,8 @@ name: Bug 报告
 description: 报告官网模板中的页面、构建、表单或 SEO 问题
 title: "[Bug] "
 labels:
-  - bug
+  - type:bug
+  - status:needs-triage
 body:
   - type: textarea
     id: problem
@@ -41,4 +42,3 @@ body:
     id: extra
     attributes:
       label: 截图或补充信息
-
