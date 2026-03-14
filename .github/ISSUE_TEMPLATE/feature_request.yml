@@ -1,0 +1,28 @@
+name: Feature 功能建议
+description: 提出官网页面、内容结构或营销能力增强建议
+title: "[Feature] "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: target
+    attributes:
+      label: 背景与目标
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 影响范围
+      placeholder: 例如首页、联系页、SEO、内容模块等
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充信息
+
