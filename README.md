@@ -5,12 +5,19 @@
 ![Vue](https://img.shields.io/badge/Vue-3-42B883?logo=vue.js&logoColor=white)
 ![SEO](https://img.shields.io/badge/SEO-Ready-0F766E)
 ![Node Server](https://img.shields.io/badge/Deploy-Node_Server-1F2937)
+![License](https://img.shields.io/badge/License-MIT-111827)
 
 一套面向创业产品官网 / 营销站的 Nuxt 3 模板，内置首页、特性页、关于页、联系页，并已打通后端联系人表单接口，适合直接作为官网仓库长期复用。
 
 ## 预览占位图
 
 ![Website Preview](./.github/assets/preview.svg)
+
+## 治理文档
+
+- [LICENSE](./LICENSE)
+- [CONTRIBUTING.md](./CONTRIBUTING.md)
+- [COMMIT_CONVENTION.md](./COMMIT_CONVENTION.md)
 
 ## 1. 项目定位
 
@@ -180,4 +187,3 @@ npm run preview
 - 按页面类型继续扩展案例页、定价页、博客页
 - 继续保持官网只负责公开内容与线索收集，不把业务后台逻辑塞入本仓库
 - 如后续需要国际化，可从 `runtimeConfig + composables + 内容配置` 开始演进
-
